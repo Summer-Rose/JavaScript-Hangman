@@ -1,12 +1,12 @@
-# Application Name
+# Hangman ~UNFINISHED~
 
-##### _{Brief description of application}, {Date of current version}_
+##### _Hangman for fun, 14 September 2015_
 
-#### By **Molly Waggett**
+#### By **Summer Brochtrup & Molly Waggett**
 
 ## Description
 
-{This is a detailed description of your application. Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. Do you want other developers to use this code in their apps? Talk about things like that here in simple terms.}
+Hangman game that is currently incomplete.
 
 ## Setup
 
@@ -21,7 +21,7 @@
 
 ### Legal
 
-Copyright (c) 2015 **Molly Waggett**
+Copyright (c) 2015 **Summer Brochtrup & Molly Waggett**
 
 This software is licensed under the MIT license.
 
