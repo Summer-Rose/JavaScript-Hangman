@@ -6,7 +6,7 @@
 
 ## Description
 
-Hangman game that is currently incomplete.
+Hangman game that is currently incomplete and somewhat broken.
 
 ## Setup
 

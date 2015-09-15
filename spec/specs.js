@@ -21,5 +21,11 @@ describe('wordToUpperCase', function() {
 describe('wordToBlanks', function() {
   it("outputs number of blanks corresponding to word length", function() {
     expect(wordToBlanks("sequoia")).to.equal("_ _ _ _ _ _ _ ");
-  })
-})
+  });
+});
+
+describe('containsLetter', function() {
+  it("outputs guessed letter in correct place in word", function() {
+    expect(containsLetter("sequoia", "e")).to.equal("_ e _ _ _ _ _ ");
+  });
+});

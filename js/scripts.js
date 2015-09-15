@@ -18,10 +18,23 @@ var wordToBlanks = function(word) {
   return blanks;
 }
 
-$(document).ready(function() {
-  $("form#mystery-word").submit(function(event){
-    var mysteryWord = $("input#word").val();
+var guessedLetters = [];
 
+var containsLetter = function(word) {
+  guessedLetters.forEach(function(guess) {
+    for (var i = 0; i < word.length; i++) {
+      if (word.charAt(i) !== guess) {
+        word = word.replace(word.charAt(i), "_ ");
+      }
+    }
+  });
+  return word;
+}
+
+$(document).ready(function() {
+  var mysteryWord;
+  $("form#mystery-word").submit(function(event){
+    mysteryWord = $("input#word").val();
     $(".blanks").text(wordToBlanks(mysteryWord));
 
     $("#start-word").hide();
@@ -29,4 +42,13 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
+  $("form#letter-guess").submit(function(event) {
+    var letter = $("input#letter").val();
+    guessedLetters.push(letter);
+
+    $(".blanks").text(containsLetter(mysteryWord));
+    $("#start-word").hide();
+    $("#game").show();
+    event.preventDefault();
+  });
 });
